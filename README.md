@@ -1,0 +1,1 @@
+My game idea is a space jet shooter game. The jet moves vertically(up and down) and constantly loses health, It has to gain health by shooting the enemys and kill them, and then it would gain some of its health back. The enemys also spawn at random areas  in the game.
