@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://da71m1drd1dqy"]
+
+[ext_resource type="Script" uid="uid://b5a3j2rbfdksf" path="res://player.gd" id="1_0xm2m"]
+[ext_resource type="Texture2D" uid="uid://c3vir18sj5ia8" path="res://images.png" id="2_0xm2m"]
+[ext_resource type="Texture2D" uid="uid://ci4fg4oi4efjv" path="res://top-down-2d-pixel-art-of-a-stealth-fighter-64x64-pixel-art-0535.png" id="2_h2yge"]
+[ext_resource type="Script" uid="uid://7hd4tmrwcdna" path="res://sprite_2d.gd" id="4_1bvp3"]
+
+[node name="Node2D" type="Node2D" unique_id=778159808]
+position = Vector2(313, 279)
+
+[node name="Player" type="CharacterBody2D" parent="." unique_id=627126182]
+script = ExtResource("1_0xm2m")
+speed = null
+
+[node name="Sprite2D" type="Sprite2D" parent="Player" unique_id=2081790345]
+rotation = 0.7853982
+scale = Vector2(0.255, 0.255)
+texture = ExtResource("2_h2yge")
+
+[node name="Enemy" type="Area2D" parent="." unique_id=2050035036]
+position = Vector2(1415, 28)
+
+[node name="Sprite2D" type="Sprite2D" parent="Enemy" unique_id=301192583]
+position = Vector2(-338.99997, 138.99998)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("2_0xm2m")
+script = ExtResource("4_1bvp3")
